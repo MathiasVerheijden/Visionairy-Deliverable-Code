@@ -1,0 +1,25 @@
+Below is JSON data that describes images in a dataset using keywords in three categories: "relevant", "new", and "nudge". Based on the keywords in this data, please provide 2 new search queries for Unsplash to find new and/or related images.
+
+Explanations:
+- Relevant: these are keywords that are common in the dataset and/or could best describe the contents of the images.
+- New: these are relevant keywords that were AI generated and were not in the original data. These are related alternatives that could help further diversify search queries for similar/related images.
+- Nudge: these are keywords that significantly deviate from the original data to help someone think outside the box. These could be alternative objects, styles, or other attributes. They are significantly different to spark new search directions, but not completely random.
+
+Instructions:
+- The first query is completely based on keywords within "relevant"
+- The second query may use all categories. This query is meant to help users think out-of-the-box and find a new search direction that sparks new ideas.
+
+Formatting:
+- Provide the queries in JSON format, which has a key called "queries" that contains a list of JSON objects containing the query itself as "query", a list of the keywords that were used to get to that query as "labels", and an explanation for how and why these keywords were chosen as "explanation"
+- ONLY provide the new queries as JSON, do not reply with any other text, comments, or instructions
+- The output should be formatted as JSON, such that it can be read by code
+- All new queries should be in the same JSON file, not as separate files
+- Provide EXACTLY two new queries in the format specified above
+- Do NOT use a comma after the last item in a either of the lists
+
+Rules:
+- The new queries do not have to match the exact keywords that were used to make them, but should logically follow from them
+- The explanations provided should not contain anything about what category the keywords came from. The explanation should ONLY focus on WHY the new query was chosen, why it is relevant
+- The queries should the suitable for searching Unsplash. Do not combine too many adjectives or keywords into long queries as this is too specific for unsplash
+
+Input:

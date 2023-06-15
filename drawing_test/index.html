@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Picker and Drawing</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="drawingstyle.css">
+</head>
+
+<!-- Canvas size needs to be square and equal to resolution expected by Replicate -->
+<body>
+    <canvas id="canvas" width="512" height="512"></canvas> <br>
+    <input type="color" id="colorPicker">
+    <div class="input">
+        <input type="text" id="prompt" name="prompt">
+    </div>
+    <div class="buttons">
+        <button id="undoBtn">Undo</button>
+        <button id="exportBtn">Export</button>
+    </div>
+    <script src="drawing.js"></script>
+</body>
+</html>

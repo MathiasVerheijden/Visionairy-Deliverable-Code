@@ -1,0 +1,16 @@
+Below I provided a list in JSON format that contains a caption, labels, and their weights for each image in a larger set of images. The weights only describe the relevance of the label within the image itself, not within the entire image set. Based in this information, provide a classification that contains keywords in three catagories: "relevant", "new", and "nudge". These should describe the images in the dataset.
+
+Explanations:
+- Relevant: these are the labels and the words in captions that are common in the dataset and/or could best describe the contents of the images. They should occur in the original data.
+- New: these are relevant keywords that you generate yourself and were not in the original data. These are related alternatives that could help further diversify search queries for similar/related images.
+- Nudge: these are keywords that deviate from the original data to help someone think outside the box. These could be alternative objects, styles, or other attributes. They are significantly different to spark new search directions, but not completely random.
+
+Further instructions:
+- You are to provide the classification in JSON format, with relevant, new, and nudge being separate keys in the JSON containing lists of keywords
+- No context is provided with the JSON. Just reply with the JSON itself in correct formatting.
+- Do not use the indicated weights of to determine how relevant the keyword is for the entire dataset. This should be done by, amongst other things, evaluating the frequency of the keyword, how related it is to other similar keywords, etc.
+- There should be no more than 10 "relevant" keywords
+- There should be at least 5 "new" and "nudge" keywords, but there can be more if necessary
+- Do NOT use a comma after the last item in a either of the lists
+
+Input data:

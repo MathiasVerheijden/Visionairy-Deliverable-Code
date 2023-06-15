@@ -1,0 +1,50 @@
+/* Bootstrap styling takes priority over custom CSS, so we use !important
+to force specific styling. This is not a very elegant solution, but it is
+time efficient :) */
+
+.prompting {
+    background-color: #F2F2F2;
+    padding: 106px 50px 50px 50px !important;
+    overflow-y: auto !important;
+}
+
+.feed {
+    padding: 106px 50px 50px 50px !important;
+    overflow-y: auto !important;
+}
+
+#feed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .feed-image {
+    width: calc(33.33% - 20px);
+    object-fit: cover;
+    object-position: center;
+  }
+
+.img-fluid {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.selected {
+    border: 5px solid #0275d8;
+}
+
+.miro-wrapper {
+    height: calc(100vh - 56px);
+}
+
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.list-group {
+    padding-top: 10px !important;
+}

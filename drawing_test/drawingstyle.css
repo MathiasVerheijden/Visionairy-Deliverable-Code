@@ -1,0 +1,9 @@
+/* Some minimal styling to make it useable */
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
